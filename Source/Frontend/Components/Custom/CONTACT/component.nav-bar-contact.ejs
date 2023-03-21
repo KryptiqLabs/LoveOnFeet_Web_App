@@ -1,0 +1,102 @@
+<!--DIRECTIONS-->
+<!--(1): DO NOT EDIT & MODIFY THIS COMPONENT DIRECTLY-->
+<!--(2): COPY COMPONENT TO COMPONENTS/CUSTOM-->
+<!--(3): RENAME COMPONENT APPROPRIATELY & STYLE AS REQUIRED-->
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="theme-light">
+
+<head>
+  <!--metaData-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--favicon-->
+  <link rel="shortcut icon" href="https://i.ibb.co/nzLzbGh/LOF-logo3.png" type="image/x-icon" >
+
+  <!--custom-scripts-->
+
+
+  <!--W3|CSS-&-BOOTSTRAP|CSS-->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <!--Font-Awesome-Icons-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <!--custom-styles-->
+  <link rel="stylesheet" href="/assets/styles/styles.main.css">
+  <!--J.S.W.A.T-X-styles-->
+  <link rel="stylesheet" href="/assets/styles/styles.J.S.W.A.T-X.css">
+  <title>Love On Feet | Contact</title>
+</head>
+
+<body class="w3-animate-opacity">
+  <header>
+
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+      <div class="w3-bar w3-card w3-animate-opacity navbar-theme" id="myNavbar">
+
+        <!--THIS-COMPONENT-MUST-STAY-IN-THIS-EXACT-LOCATION-->
+        <!--INCLUDE-TITLE-BAR-COMPONENT-->
+        <%- include('component.title-bar-contact.ejs') %>
+        <!--/INCLUDE-TITLE-BAR-COMPONENT-->
+
+        <!-- Right-sided navbar links -->
+        <div class="w3-right w3-hide-small">
+          <a href="#1" class="w3-bar-item w3-button w3-hover-orange"><i></i> About Us</a>
+          <a href="#1" class="w3-bar-item w3-button w3-hover-orange">Our Team</a>
+          <a href="#2" class="w3-bar-item w3-button w3-hover-orange">Our Footprints</a>
+          <a href="/donations" class="w3-bar-item w3-button w3-hover-orange">Donate</a>
+          <a href="/contact" class="w3-bar-item w3-button w3-hover-orange">Contact Us</a>
+         
+           <!--SIGN-IN-BUTTON-->
+           <!-- <button class="w3-bar-item fx-button fx-blue-quartz fx-scale fx-trans"
+           onclick="function loadSignIn(){window.location.assign('/sign-in')};loadSignIn()" style="margin-top: 8px; margin-right: 6px;">Sign In</button> -->
+         <!--/SIGN-IN-BUTTON-->
+
+         <!--SIGN-UP-BUTTON-->
+         <!-- <button class="w3-bar-item fx-button fx-blue-quartz fx-scale fx-trans"
+           onclick="function loadSignUp(){window.location.assign('/sign-up')};loadSignUp()" style="margin-top: 8px; margin-right: 6px;">Sign Up</button> -->
+         <!--/SIGN-UP-BUTTON-->
+
+         <button class="w3-bar-item fx-button fx-trans fx-sunset-fire" id="switch" onclick="toggleTheme()" style="margin-top: 8px; margin-right: 6px;"><i
+             class="fas fa-moon" title="Switch Theme"></i></button>
+      
+
+        </div>
+
+        <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium w3-hover-yellow"
+          onclick="w3_open()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Sidebar on small screens when clicking the menu icon -->
+    <nav class="w3-sidebar w3-bar-block fx-blue-quartz w3-card w3-animate-left w3-hide-medium w3-hide-large"
+      style="display:none" id="mySidebar">
+      <a href="javascript:void(0)" onclick="w3_close()"
+        class="w3-bar-item w3-button w3-large w3-padding w3-hover-red">Close ×</a>
+      <!-- <a href="/app/sign-up" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow">SIGN UP</a>
+      <a href="/app/sign-in" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow">SIGN IN</a> -->
+      <a href="#1" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow">About Us</a>
+      <a href="#2" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow">Our Team</a>
+      <a href="#3" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow">Our Footprints</a>
+      <a href="/donations" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow">Donate</a>
+      <a href="/contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow">Contact Us</a>
+      <button class="w3-bar-item fx-trans w3-hover-yellow" id="switch" onclick="toggleTheme()" style="margin-top: 8px; margin-right: 6px;"><i
+        class="fas fa-moon" title="Switch Theme"></i> Switch Theme</button>
+      <a href="/privacy-policy" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow">PRIVACY POLICY</a>
+      <a href="/terms-of-service" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow">TERMS &
+        CONDITIONS</a>
+      <a href="/docs" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-yellow">DOCS</a>
+    </nav>
+    </div>
+    <!--/TOP-NAV-BAR-END-->
+
+
+
+  </header>

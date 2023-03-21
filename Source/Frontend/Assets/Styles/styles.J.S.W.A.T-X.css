@@ -1,0 +1,144 @@
+/*IN ORDER TO KEEP THE INTEGRITY OF THE COMPONENTS, THEIR EFFECTS & STYLES, 
+IT IS ***RECOMMENDED*** YOU DO NOT MODIFY J.S.W.A.T-X STYLES: 
+THEY ARE FOR USE WITH RENDERING THE J.S.W.A.T-X COMPONENTS-LIBRARY*/
+
+
+
+/*
+J.S.W.A.T-X COMPONENT-SCHEMES
+*/
+/*BUTTON-SCHEME*/
+.fx-button {
+    text-align: centre;
+    color: #000;
+    width: 100%;
+    border-radius: 20px;
+    border: none;
+    padding: 6px;
+    text-decoration: none;
+    list-style-type: none;
+    cursor: pointer;
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.63);
+}
+
+.fx-button:hover {
+    background: #fff;
+    color: #000;
+}
+
+/*END-BUTTON-SCHEME*/
+
+/*TEXT-INPUT-SCHEME*/
+.fx-text-box {
+    background: var(--bg-primary);
+    color: var(--color-textbox);
+    width: 100%;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    padding: 8px;
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.342);
+}
+
+.fx-text-box:hover {
+    box-shadow: 4px 4px 12px rgba(255, 0, 200, 0.507);
+}
+
+/*END-TEXT-INPUT-SCHEME*/
+
+/*CARD-SCHEME*/
+.fx-card {
+    background-color: var(--bg-secondary);
+    color: var(--font-secondary);
+    border-radius: 16px;
+    border: none;
+    padding: 12px;
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.459);
+}
+
+.fx-card:hover {
+    box-shadow: 4px 4px 14px rgba(255, 255, 255, 0.199);
+}
+
+/*END-CARD-SCHEME*/
+
+/*START-AVATAR-CARD-SCHEME*/
+.fx-avatar-img {
+    margin: 12px;
+    border: none;
+    height: 140px;
+    width: 140px;
+}
+
+/*END-AVATAR-CARD-SCHEME*/
+/*////////////////////////////////////////////////////////////////////////////////////*/
+/*J.S.W.A.T-X COLOR-SCHEMES*/
+/*GRADIENTS*/
+
+/*UFO-NIGHT-SCHEME*/
+.fx-ufo {
+    background: radial-gradient(green, rgb(21, 58, 0));
+}
+
+.fx-ufo-night {
+    background: radial-gradient(rgb(0, 95, 0), black);
+}
+
+/*UFO-DAY-SCHEME*/
+.fx-ufo-day {
+    background: radial-gradient(rgb(246, 250, 0), rgb(119, 119, 119));
+}
+
+/*UFO-MIX-SCHEME*/
+.fx-ufo-mix {
+    background: radial-gradient(rgb(192, 0, 250), rgb(0, 211, 248), red);
+}
+
+/*SILVER-PLATE-SCHEME*/
+.fx-silver-plate {
+    background: linear-gradient(rgb(179, 179, 179), rgb(141, 141, 141), rgb(255, 255, 255));
+}
+
+/*SILVER-PLATE-SCHEME*/
+.fx-toxic-pink {
+    background: linear-gradient(rgb(255, 0, 242), rgb(0, 238, 99), rgb(199, 18, 169));
+}
+
+/*SUNSET-FIRE-SCHEME*/
+.fx-sunset-fire {
+    background: linear-gradient(purple, yellow);
+}
+
+/*BLUE-QUARTZ-SCHEME*/
+.fx-blue-quartz {
+    background: linear-gradient(rgba(0, 208, 245, 0.959), rgb(194, 194, 194), rgb(255, 255, 255));
+}
+
+
+/*J.S.W.A.T-X COLOR-SCHEMES*/
+/*STANDARD COLORS*/
+/*GREEN-SCHEME*/
+.fx-green {
+    background: green;
+}
+
+/*////////////////////////////////////////////////////////////////////////////////////*/
+
+/*
+J.S.W.A.T-X TRANSITIONS&EFFECTS-SCHEMES
+*/
+/*HOVER-SOFT-TRANSITION*/
+.fx-trans:hover {
+    transition: all 250ms ease-in-out;
+}
+
+/*HOVER-SCALE-TRANSITION*/
+.fx-scale:hover {
+    transform: scale(1.1);
+    transition: all 250ms ease-in-out;
+}
+
+/*HOVER-SOFT-TRANSITION-GLOBAL*/
+a:hover {
+    transition: all 250ms ease-in-out;
+}

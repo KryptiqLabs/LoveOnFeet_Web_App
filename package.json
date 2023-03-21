@@ -1,0 +1,21 @@
+{
+  "name": "j.s.w.a.t-template",
+  "version": "1.0.0",
+  "description": "This is a web application template, built for the community, by a JS enthusiast.",
+  "main": "application_main.js",
+  "scripts": {
+    "start": "nodemon application_main.js"
+  },
+  "keywords": [],
+  "author": "Muhammed Shaaqir Abrahams",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.19"
+  }
+}

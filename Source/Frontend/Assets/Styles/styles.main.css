@@ -1,0 +1,84 @@
+/*
+//HERE ALL THE STYLES FOR THE MAIN WEB APP ARE DEFINED//
+//YOU CAN DEFINE YOUR OWN CUSTOM STYLES HERE//
+*/
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  background-color: var(--bg-primary);
+  color: var(--font-primary);
+  min-height: 100%;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.theme-light {
+  --bg-primary: #fbfbfe;
+  --bg-secondary: #2d3131;
+  --bg-textbox: #2d3131;
+  --color-textbox: var(--blue);
+  --font-primary: #000000;
+  --font-secondary: var(--blue);
+  --navbg-primary: #000000;
+  --navtext-primary: #fbfbfe;
+  --bgImage: url("/Assets/Images/bg1.jpg");
+}
+
+.theme-dark {
+  --bg-primary: #2d3131;
+  --bg-secondary: #ffffff;
+  --bg-textbox: #ffffff;
+  --color-textbox: var(--pink);
+  --font-primary: #ffffff;
+  --font-secondary: var(--pink);
+  --navbg-primary: #fbfbfe;
+  --navtext-primary: #000000;
+  --bgImage: url("/Assets/Images/bg2.jpg");
+}
+
+:root {
+  --dark1: #374151;
+  --dark2: #1f2937;
+  --dark3: #111827;
+  --grey: #5c6169;
+  --light: #eee;
+  --pink: #ec4899;
+  --purple: #a114ff;
+  --blue: rgb(0, 200, 236);
+}
+
+/* Full height image header */
+.bg {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+  height: 100%;
+}
+
+.navbar-theme {
+  background-color: var(--navbg-primary);
+  color: var(--navtext-primary);
+}
+
+.contact-message {
+  padding: 0px;
+  height: 220px;
+  text-align: left;
+}

@@ -1,0 +1,500 @@
+<!--DOCS-COMPONENT-->
+<!--DIRECTIONS-->
+<!--(1): YOU CAN EDIT & MODIFY THIS COMPONENT DIRECTLY-->
+<!--(2): ADD YOUR CUSTOMER STYLES IN STYLES.MAIN TO KEEP IT CONCISE OR USE W3S CLASSES-->
+
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--metaData-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--favicon-->
+    <link rel="shortcut icon" href="/assets/favicon/jswat-favicon.png" type="image/x-icon">
+    <!--jQEURY-LIBRARY-(LATEST)-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!--W3|CSS-&-BOOTSTRAP|CSS-->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!--Font-Awesome-Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!--custom-styles-->
+    <link rel="stylesheet" href="/assets/styles/styles.main.css">
+    <!--J.S.W.A.T-X-styles-->
+    <link rel="stylesheet" href="/assets/styles/styles.J.S.W.A.T-X.css">
+    <title>My App Docs</title>
+</head>
+
+<body class="w3-animate-right" style="background: rgb(27, 26, 26); height: 100%; ">
+
+    <!-- Sidebar/menu -->
+    <nav class="w3-sidebar fx-ufo-night w3-collapse w3-top w3-large w3-padding w3-animate-zoom"
+        style="z-index:3;width:300px;font-weight:bold;" id="mySidebar">
+        <br>
+        <!--GO-TO-HOME-BUTTON-->
+        <button class="fx-button fx-sunset-fire fx-scale fx-trans" style="padding: 6px;"
+            onclick="function loadHome(){window.location.assign('/')};loadHome()"> <i
+                class="fas fa-arrow-left w3-margin-right"></i>Home</button>
+        <!--/GO-TO-HOME-BUTTON-->
+        <div class="w3-container">
+            <h3 class="w3-padding-64 w3-text-white"><b>My App Docs <i class="fas fa-rocket fa-fw w3-xxlarge"></i></b>
+            </h3>
+        </div>
+        <div class="w3-bar-block w3-text-red">
+            <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">TOP <i
+                    class="fas fa-arrow-left-long fa-fw"></i></a>
+            <a href="#introduction" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Introduction</a>
+            <a href="#part1" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">PART 1</a>
+            <a href="#part2" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">PART 2</a>
+            <a href="#part3" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">PART 3</a>
+            <a href="#part4" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">PART 4</a>
+            <a href="#part5" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">PART 5</a>
+            <a href="#part6" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">PART 6</a>
+            <a href="#part7" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">PART 7</a>
+            <a href="#part8" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">PART 8</a>
+            <a href="#part9" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">PART 9</a>
+            <a href="#part10" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">PART 10</a>
+            <a href="#references" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">References</a>
+        </div>
+    </nav>
+
+    <!-- Top menu on small screens -->
+    <header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+        <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+        <span>My Application Documentation <i class="fas fa-rocket fa-fw"></i></span>
+    </header>
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu"
+        id="myOverlay"></div>
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main" style="margin-left:340px;margin-right:30px">
+
+        <!-- Header -->
+        <div class="w3-container" style="margin-top:80px" id="showcase">
+
+
+            <h1 class="w3-jumbo w3-text-white"><b>My App Documentation</b> <i class="fas fa-rocket fa-fw"
+                    style="font-size: 60px;"></i>
+            </h1>
+
+            <div style="display: inline-flex;">
+                <img class="w3-round w3-card-4 w4-right w3-margin" src="/assets/Images/plants-vector.jpg" alt=""
+                    style="height: 250px; ">
+                <img class="w3-round w3-card-4 w4-right w3-margin" src="/assets/Images/landscape-vector.jpg" alt=""
+                    style="height: 250px; ">
+            </div>
+            <hr style="width:50px;border:5px solid red" class="w3-round">
+        </div>
+
+        <!-- introduction -->
+        <div class="w3-container" id="introduction" style="height: 100%;">
+            <h1 class="w3-xxxlarge w3-text-red"><b>Introduction</b></h1>
+            <hr style="width:50px;border:5px solid red" class="w3-round">
+            <section>
+                <article class="w3-text-white">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent turpis dolor, dapibus
+                        consectetur ligula id, efficitur finibus libero. Mauris vehicula ex a ante vehicula suscipit.
+                        Vivamus mi sem, dapibus sed rutrum nec, faucibus sed diam. Donec et viverra magna. Curabitur
+                        eget accumsan urna. Nam sed aliquam sem. Duis facilisis vel augue eget pretium. Mauris sit amet
+                        odio at sapien iaculis tempor vitae vitae lorem. Aliquam mi arcu, sagittis at elit sit amet,
+                        venenatis faucibus tellus. Quisque ut elit eu velit dapibus iaculis et et lorem.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent turpis dolor, dapibus
+                        consectetur ligula id, efficitur finibus libero. Mauris vehicula ex a ante vehicula suscipit.
+                        Vivamus mi sem, dapibus sed rutrum nec, faucibus sed diam. Donec et viverra magna. Curabitur
+                        eget accumsan urna. Nam sed aliquam sem. Duis facilisis vel augue eget pretium. Mauris sit amet
+                        odio at sapien iaculis tempor vitae vitae lorem. Aliquam mi arcu, sagittis at elit sit amet,
+                        venenatis faucibus tellus. Quisque ut elit eu velit dapibus iaculis et et lorem.</p>
+                </article>
+            </section>
+        </div>
+        <!-- /introduction -->
+
+        <!--PART1-START-->
+        <div class="w3-container" id="part1" style="height: 100%;">
+            <h1 class="w3-xxxlarge w3-text-red"><b>Part 1</b></h1>
+            <hr style="width:50px;border:5px solid red" class="w3-round">
+            <section>
+                <article class="w3-text-white">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent turpis dolor, dapibus
+                        consectetur ligula id, efficitur finibus libero. Mauris vehicula ex a ante vehicula suscipit.
+                        Vivamus mi sem, dapibus sed rutrum nec, faucibus sed diam. Donec et viverra magna. Curabitur
+                        eget accumsan urna. Nam sed aliquam sem. Duis facilisis vel augue eget pretium. Mauris sit amet
+                        odio at sapien iaculis tempor vitae vitae lorem. Aliquam mi arcu, sagittis at elit sit amet,
+                        venenatis faucibus tellus. Quisque ut elit eu velit dapibus iaculis et et lorem.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent turpis dolor, dapibus
+                        consectetur ligula id, efficitur finibus libero. Mauris vehicula ex a ante vehicula suscipit.
+                        Vivamus mi sem, dapibus sed rutrum nec, faucibus sed diam. Donec et viverra magna. Curabitur
+                        eget accumsan urna. Nam sed aliquam sem. Duis facilisis vel augue eget pretium. Mauris sit amet
+                        odio at sapien iaculis tempor vitae vitae lorem. Aliquam mi arcu, sagittis at elit sit amet,
+                        venenatis faucibus tellus. Quisque ut elit eu velit dapibus iaculis et et lorem.</p>
+                </article>
+            </section>
+        </div>
+        <!--/PART1-END-->
+
+        <!--PART2-START-->
+        <div class="w3-container" id="part2" style="height: 100%;">
+            <h1 class="w3-xxxlarge w3-text-red"><b>Part 2</b></h1>
+            <hr style="width:50px;border:5px solid red" class="w3-round">
+            <section>
+                <article class="w3-text-white">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent turpis dolor, dapibus
+                        consectetur ligula id, efficitur finibus libero. Mauris vehicula ex a ante vehicula suscipit.
+                        Vivamus mi sem, dapibus sed rutrum nec, faucibus sed diam. Donec et viverra magna. Curabitur
+                        eget accumsan urna. Nam sed aliquam sem. Duis facilisis vel augue eget pretium. Mauris sit amet
+                        odio at sapien iaculis tempor vitae vitae lorem. Aliquam mi arcu, sagittis at elit sit amet,
+                        venenatis faucibus tellus. Quisque ut elit eu velit dapibus iaculis et et lorem.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent turpis dolor, dapibus
+                        consectetur ligula id, efficitur finibus libero. Mauris vehicula ex a ante vehicula suscipit.
+                        Vivamus mi sem, dapibus sed rutrum nec, faucibus sed diam. Donec et viverra magna. Curabitur
+                        eget accumsan urna. Nam sed aliquam sem. Duis facilisis vel augue eget pretium. Mauris sit amet
+                        odio at sapien iaculis tempor vitae vitae lorem. Aliquam mi arcu, sagittis at elit sit amet,
+                        venenatis faucibus tellus. Quisque ut elit eu velit dapibus iaculis et et lorem.</p>
+                </article>
+            </section>
+        </div>
+        <!--/PART2-END-->
+
+        <!--PART3-START-->
+        <div class="w3-container" id="part3" style="height: 100%;">
+            <h1 class="w3-xxxlarge w3-text-red"><b>Part 3</b></h1>
+            <hr style="width:50px;border:5px solid red" class="w3-round">
+            <section>
+                <article class="w3-text-white">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent turpis dolor, dapibus
+                        consectetur ligula id, efficitur finibus libero. Mauris vehicula ex a ante vehicula suscipit.
+                        Vivamus mi sem, dapibus sed rutrum nec, faucibus sed diam. Donec et viverra magna. Curabitur
+                        eget accumsan urna. Nam sed aliquam sem. Duis facilisis vel augue eget pretium. Mauris sit amet
+                        odio at sapien iaculis tempor vitae vitae lorem. Aliquam mi arcu, sagittis at elit sit amet,
+                        venenatis faucibus tellus. Quisque ut elit eu velit dapibus iaculis et et lorem.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent turpis dolor, dapibus
+                        consectetur ligula id, efficitur finibus libero. Mauris vehicula ex a ante vehicula suscipit.
+                        Vivamus mi sem, dapibus sed rutrum nec, faucibus sed diam. Donec et viverra magna. Curabitur
+                        eget accumsan urna. Nam sed aliquam sem. Duis facilisis vel augue eget pretium. Mauris sit amet
+                        odio at sapien iaculis tempor vitae vitae lorem. Aliquam mi arcu, sagittis at elit sit amet,
+                        venenatis faucibus tellus. Quisque ut elit eu velit dapibus iaculis et et lorem.</p>
+                </article>
+            </section>
+        </div>
+        <!--/PART3-END-->
+
+
+        <!--PART4-START-->
+        <div class="w3-container" id="part4" style="height: 100%;">
+            <h1 class="w3-xxxlarge w3-text-red"><b>Part 4</b></h1>
+            <hr style="width:50px;border:5px solid red" class="w3-round">
+            <section>
+                <article class="w3-text-white">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent turpis dolor, dapibus
+                        consectetur ligula id, efficitur finibus libero. Mauris vehicula ex a ante vehicula suscipit.
+                        Vivamus mi sem, dapibus sed rutrum nec, faucibus sed diam. Donec et viverra magna. Curabitur
+                        eget accumsan urna. Nam sed aliquam sem. Duis facilisis vel augue eget pretium. Mauris sit amet
+                        odio at sapien iaculis tempor vitae vitae lorem. Aliquam mi arcu, sagittis at elit sit amet,
+                        venenatis faucibus tellus. Quisque ut elit eu velit dapibus iaculis et et lorem.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent turpis dolor, dapibus
+                        consectetur ligula id, efficitur finibus libero. Mauris vehicula ex a ante vehicula suscipit.
+                        Vivamus mi sem, dapibus sed rutrum nec, faucibus sed diam. Donec et viverra magna. Curabitur
+                        eget accumsan urna. Nam sed aliquam sem. Duis facilisis vel augue eget pretium. Mauris sit amet
+                        odio at sapien iaculis tempor vitae vitae lorem. Aliquam mi arcu, sagittis at elit sit amet,
+                        venenatis faucibus tellus. Quisque ut elit eu velit dapibus iaculis et et lorem.</p>
+                </article>
+            </section>
+        </div>
+        <!--/PART4-END-->
+
+
+        <!--PART5-START-->
+        <div class="w3-container" id="part5" style="height: 100%;">
+            <h1 class="w3-xxxlarge w3-text-red"><b>Part 5</b></h1>
+            <hr style="width:50px;border:5px solid red" class="w3-round">
+            <section>
+                <article class="w3-text-white">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent turpis dolor, dapibus
+                        consectetur ligula id, efficitur finibus libero. Mauris vehicula ex a ante vehicula suscipit.
+                        Vivamus mi sem, dapibus sed rutrum nec, faucibus sed diam. Donec et viverra magna. Curabitur
+                        eget accumsan urna. Nam sed aliquam sem. Duis facilisis vel augue eget pretium. Mauris sit amet
+                        odio at sapien iaculis tempor vitae vitae lorem. Aliquam mi arcu, sagittis at elit sit amet,
+                        venenatis faucibus tellus. Quisque ut elit eu velit dapibus iaculis et et lorem.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent turpis dolor, dapibus
+                        consectetur ligula id, efficitur finibus libero. Mauris vehicula ex a ante vehicula suscipit.
+                        Vivamus mi sem, dapibus sed rutrum nec, faucibus sed diam. Donec et viverra magna. Curabitur
+                        eget accumsan urna. Nam sed aliquam sem. Duis facilisis vel augue eget pretium. Mauris sit amet
+                        odio at sapien iaculis tempor vitae vitae lorem. Aliquam mi arcu, sagittis at elit sit amet,
+                        venenatis faucibus tellus. Quisque ut elit eu velit dapibus iaculis et et lorem.</p>
+                </article>
+            </section>
+        </div>
+        <!--/PART5-END-->
+
+
+        <!--PART6-START-->
+        <div class="w3-container" id="part6" style="height: 100%;">
+            <h1 class="w3-xxxlarge w3-text-red"><b>Part 6</b></h1>
+            <hr style="width:50px;border:5px solid red" class="w3-round">
+            <section>
+                <article class="w3-text-white">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent turpis dolor, dapibus
+                        consectetur ligula id, efficitur finibus libero. Mauris vehicula ex a ante vehicula suscipit.
+                        Vivamus mi sem, dapibus sed rutrum nec, faucibus sed diam. Donec et viverra magna. Curabitur
+                        eget accumsan urna. Nam sed aliquam sem. Duis facilisis vel augue eget pretium. Mauris sit amet
+                        odio at sapien iaculis tempor vitae vitae lorem. Aliquam mi arcu, sagittis at elit sit amet,
+                        venenatis faucibus tellus. Quisque ut elit eu velit dapibus iaculis et et lorem.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent turpis dolor, dapibus
+                        consectetur ligula id, efficitur finibus libero. Mauris vehicula ex a ante vehicula suscipit.
+                        Vivamus mi sem, dapibus sed rutrum nec, faucibus sed diam. Donec et viverra magna. Curabitur
+                        eget accumsan urna. Nam sed aliquam sem. Duis facilisis vel augue eget pretium. Mauris sit amet
+                        odio at sapien iaculis tempor vitae vitae lorem. Aliquam mi arcu, sagittis at elit sit amet,
+                        venenatis faucibus tellus. Quisque ut elit eu velit dapibus iaculis et et lorem.</p>
+                </article>
+            </section>
+        </div>
+        <!--/PART6-END-->
+
+
+        <!--PART7-START-->
+        <div class="w3-container" id="part7" style="height: 100%;">
+            <h1 class="w3-xxxlarge w3-text-red"><b>Part 7</b></h1>
+            <hr style="width:50px;border:5px solid red" class="w3-round">
+            <section>
+                <article class="w3-text-white">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent turpis dolor, dapibus
+                        consectetur ligula id, efficitur finibus libero. Mauris vehicula ex a ante vehicula suscipit.
+                        Vivamus mi sem, dapibus sed rutrum nec, faucibus sed diam. Donec et viverra magna. Curabitur
+                        eget accumsan urna. Nam sed aliquam sem. Duis facilisis vel augue eget pretium. Mauris sit amet
+                        odio at sapien iaculis tempor vitae vitae lorem. Aliquam mi arcu, sagittis at elit sit amet,
+                        venenatis faucibus tellus. Quisque ut elit eu velit dapibus iaculis et et lorem.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent turpis dolor, dapibus
+                        consectetur ligula id, efficitur finibus libero. Mauris vehicula ex a ante vehicula suscipit.
+                        Vivamus mi sem, dapibus sed rutrum nec, faucibus sed diam. Donec et viverra magna. Curabitur
+                        eget accumsan urna. Nam sed aliquam sem. Duis facilisis vel augue eget pretium. Mauris sit amet
+                        odio at sapien iaculis tempor vitae vitae lorem. Aliquam mi arcu, sagittis at elit sit amet,
+                        venenatis faucibus tellus. Quisque ut elit eu velit dapibus iaculis et et lorem.</p>
+                </article>
+            </section>
+        </div>
+        <!--/PART7-END-->
+
+
+        <!--PART8-START-->
+        <div class="w3-container" id="part8" style="height: 100%;">
+            <h1 class="w3-xxxlarge w3-text-red"><b>Part 8</b></h1>
+            <hr style="width:50px;border:5px solid red" class="w3-round">
+            <section>
+                <article class="w3-text-white">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent turpis dolor, dapibus
+                        consectetur ligula id, efficitur finibus libero. Mauris vehicula ex a ante vehicula suscipit.
+                        Vivamus mi sem, dapibus sed rutrum nec, faucibus sed diam. Donec et viverra magna. Curabitur
+                        eget accumsan urna. Nam sed aliquam sem. Duis facilisis vel augue eget pretium. Mauris sit amet
+                        odio at sapien iaculis tempor vitae vitae lorem. Aliquam mi arcu, sagittis at elit sit amet,
+                        venenatis faucibus tellus. Quisque ut elit eu velit dapibus iaculis et et lorem.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent turpis dolor, dapibus
+                        consectetur ligula id, efficitur finibus libero. Mauris vehicula ex a ante vehicula suscipit.
+                        Vivamus mi sem, dapibus sed rutrum nec, faucibus sed diam. Donec et viverra magna. Curabitur
+                        eget accumsan urna. Nam sed aliquam sem. Duis facilisis vel augue eget pretium. Mauris sit amet
+                        odio at sapien iaculis tempor vitae vitae lorem. Aliquam mi arcu, sagittis at elit sit amet,
+                        venenatis faucibus tellus. Quisque ut elit eu velit dapibus iaculis et et lorem.</p>
+                </article>
+            </section>
+        </div>
+        <!--/PART8-END-->
+
+
+        <!--PART9-START-->
+        <div class="w3-container" id="part9" style="height: 100%;">
+            <h1 class="w3-xxxlarge w3-text-red"><b>Part 9</b></h1>
+            <hr style="width:50px;border:5px solid red" class="w3-round">
+            <section>
+                <article class="w3-text-white">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent turpis dolor, dapibus
+                        consectetur ligula id, efficitur finibus libero. Mauris vehicula ex a ante vehicula suscipit.
+                        Vivamus mi sem, dapibus sed rutrum nec, faucibus sed diam. Donec et viverra magna. Curabitur
+                        eget accumsan urna. Nam sed aliquam sem. Duis facilisis vel augue eget pretium. Mauris sit amet
+                        odio at sapien iaculis tempor vitae vitae lorem. Aliquam mi arcu, sagittis at elit sit amet,
+                        venenatis faucibus tellus. Quisque ut elit eu velit dapibus iaculis et et lorem.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent turpis dolor, dapibus
+                        consectetur ligula id, efficitur finibus libero. Mauris vehicula ex a ante vehicula suscipit.
+                        Vivamus mi sem, dapibus sed rutrum nec, faucibus sed diam. Donec et viverra magna. Curabitur
+                        eget accumsan urna. Nam sed aliquam sem. Duis facilisis vel augue eget pretium. Mauris sit amet
+                        odio at sapien iaculis tempor vitae vitae lorem. Aliquam mi arcu, sagittis at elit sit amet,
+                        venenatis faucibus tellus. Quisque ut elit eu velit dapibus iaculis et et lorem.</p>
+                </article>
+            </section>
+        </div>
+        <!--/PART9-END-->
+
+
+        <!--PART10-START-->
+        <div class="w3-container" id="part10" style="height: 100%;">
+            <h1 class="w3-xxxlarge w3-text-red"><b>Part 10</b></h1>
+            <hr style="width:50px;border:5px solid red" class="w3-round">
+            <section>
+                <article class="w3-text-white">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent turpis dolor, dapibus
+                        consectetur ligula id, efficitur finibus libero. Mauris vehicula ex a ante vehicula suscipit.
+                        Vivamus mi sem, dapibus sed rutrum nec, faucibus sed diam. Donec et viverra magna. Curabitur
+                        eget accumsan urna. Nam sed aliquam sem. Duis facilisis vel augue eget pretium. Mauris sit amet
+                        odio at sapien iaculis tempor vitae vitae lorem. Aliquam mi arcu, sagittis at elit sit amet,
+                        venenatis faucibus tellus. Quisque ut elit eu velit dapibus iaculis et et lorem.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent turpis dolor, dapibus
+                        consectetur ligula id, efficitur finibus libero. Mauris vehicula ex a ante vehicula suscipit.
+                        Vivamus mi sem, dapibus sed rutrum nec, faucibus sed diam. Donec et viverra magna. Curabitur
+                        eget accumsan urna. Nam sed aliquam sem. Duis facilisis vel augue eget pretium. Mauris sit amet
+                        odio at sapien iaculis tempor vitae vitae lorem. Aliquam mi arcu, sagittis at elit sit amet,
+                        venenatis faucibus tellus. Quisque ut elit eu velit dapibus iaculis et et lorem.</p>
+                </article>
+            </section>
+        </div>
+        <!--/PART10-END-->
+
+
+        <!--PART-references-START-->
+        <div class="w3-container" id="references" style="height: 100%;">
+            <h1 class="w3-xxxlarge w3-text-red"><b>References</b></h1>
+            <hr style="width:50px;border:5px solid red" class="w3-round">
+            <section>
+                <article class="w3-text-white">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent turpis dolor, dapibus
+                        consectetur ligula id, efficitur finibus libero. Mauris vehicula ex a ante vehicula suscipit.
+                        Vivamus mi sem, dapibus sed rutrum nec, faucibus sed diam. Donec et viverra magna. Curabitur
+                        eget accumsan urna. Nam sed aliquam sem. Duis facilisis vel augue eget pretium. Mauris sit amet
+                        odio at sapien iaculis tempor vitae vitae lorem. Aliquam mi arcu, sagittis at elit sit amet,
+                        venenatis faucibus tellus. Quisque ut elit eu velit dapibus iaculis et et lorem.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent turpis dolor, dapibus
+                        consectetur ligula id, efficitur finibus libero. Mauris vehicula ex a ante vehicula suscipit.
+                        Vivamus mi sem, dapibus sed rutrum nec, faucibus sed diam. Donec et viverra magna. Curabitur
+                        eget accumsan urna. Nam sed aliquam sem. Duis facilisis vel augue eget pretium. Mauris sit amet
+                        odio at sapien iaculis tempor vitae vitae lorem. Aliquam mi arcu, sagittis at elit sit amet,
+                        venenatis faucibus tellus. Quisque ut elit eu velit dapibus iaculis et et lorem.</p>
+                </article>
+            </section>
+        </div>
+        <!--/PART-references-END-->
+
+
+
+        <!-- End page content -->
+    </div>
+
+    <!--MY-CUSTOM-FOOTER-BAR-COMPONENT-->
+
+<!--FOOTER-BAR-CONTENT-->
+<footer class="w3-center w3-black w3-padding-large" style="margin-left: 300px;">
+    <!--GO-TO-TOP-BUTTON-->
+    <a href="#" class="fx-button fx-sunset-fire fx-scale fx-trans"><i class="fa fa-arrow-up w3-margin-right"></i>To
+      top</a>
+    <!--SOCIAL-ICONS-SECTION-->
+    <div class="w3-xlarge w3-section">
+      <h4>Connect with us!</h4>
+      <a href="https://"><i
+          class="fab fa-facebook w3-padding-small w3-text-blue w3-xxxlarge fx-scale fx-trans w3-hover-text-white"></i></a>
+      <a href="https://"><i
+          class="fab fa-instagram w3-padding-small w3-text-orange w3-xxxlarge fx-scale fx-trans w3-hover-text-white"></i></a>
+      <a href="https://">
+        <i class="fab fa-snapchat  w3-padding-small w3-text-yellow w3-xxxlarge fx-scale fx-trans w3-hover-text-white"></i></a>
+      <a href="https://"><i class="fab fa-pinterest w3-padding-small w3-text-red w3-xxxlarge fx-scale fx-trans w3-hover-text-white"></i>
+      </a>
+      <a href="https://">
+        <i class="fab fa-twitter-square w3-padding-small w3-text-blue w3-xxxlarge fx-scale fx-trans w3-hover-text-white"></i></a>
+      <a href="https://"><i class="fab fa-linkedin w3-padding-small w3-text-blue w3-xxxlarge fx-scale fx-trans w3-hover-text-white"></i>
+      </a>
+    </div>
+    <!--COMPANY-CONTENT-->
+    <p>&copy Copyright 2023 | Built with <i class="fas fa-heart fa-fw w3-text-red w3-xlarge"></i> by &copy Kryptiq Labs South
+      Africa | All Rights Reserved.
+    </p>
+  
+  <div class="w3-center" style="display: flex; justify-content: center;">
+    <a href="#" class="w3-padding w3-text-red w3-hover-text-white">Terms of Service</a>
+    <a href="#" class="w3-padding w3-text-red w3-hover-text-white">Privacy Policy</a>
+    <a href="#" class="w3-padding w3-text-red w3-hover-text-white">Contact Us</a>
+  </div>
+  
+    <p><i class="fas fa-power-off fa-fw w3-text-red"></i> Powered by</p>
+    <!--TECH-STACKS-CONTENT-->
+    <div>
+  
+      <!--W3S-->
+      <a href="https://www.w3schools.com/" class="w3-text-red w3-hover-text-white w3-padding" title="W3SCHOOLS">W3.css</a>
+      <!--/W3S-->
+  
+      <!--FreePik-->
+      <a href="https://www.freepik.com/" class="w3-text-red w3-hover-text-white w3-padding" title="Freepik">Freepik</a>
+      <!--/FreePik-->
+  
+      <!--THE-CLOUD-->
+      <a href="https://www.cloudflare.com/en-gb/learning/cloud/what-is-the-cloud/"
+        class="w3-text-red  w3-hover-text-white w3-padding" title="CLOUD TECH">Cloud Technology</a>
+      <!--/THE-CLOUD-->
+  
+      <!--GITHUB-->
+      <a href="https://github.com/" class="w3-text-red w3-hover-text-white w3-padding" title="GITHUB">Github</a>
+      <!--/GITHUB-->
+  
+      <!--NODEJS-->
+      <a href="https://nodejs.org/en/" class="w3-text-red w3-hover-text-white w3-padding" title="NODE.JS">Node.js</a>
+      <!--/NODEJS-->
+  
+      <!--EJS-->
+      <a href="https://ejs.co/" class="w3-text-red w3-hover-text-white w3-padding" title="EJS">EJS</a>
+      <!--/EJS-->
+  
+      <!--KRYPTIQ-LABS-S.A-->
+      <a href="https://" class=" w3-text-red w3-hover-text-white w3-padding" title="Kryptiq Labs">Kryptiq Labs
+      </a>
+      <!--/KRYPTIQ-LABS-S.A-->
+  
+      <!--J.S.W.A.T-LOGO-->
+      <a href="https://" class="w3-text-red w3-hover-text-white w3-padding" title="J.S.W.A.T">J.S.W.A.T</a>
+      <!--/J.S.W.A.T-LOGO-->
+    </div>
+  </footer>
+
+    <!--EXTERNAL-LIBRARIES-->
+
+    <!--FX-scripts-->
+    <script src="/assets/effects/fx.slider.js"></script>
+    <script src="/assets/effects/fx.navbar.js"></script>
+    <script src="/assets/effects/fx.serverRefreshProvider.js"></script>
+    <script src="/assets/effects/fx.greetUser.js"></script>
+
+    <!--CALEANDAR-CSS/JS-->
+    <!-- <script src="/assets/caleander/js/caleandar.js"></script>
+    <script src="/assets/caleander/js/demo.js"></script> -->
+
+    <!--jQUERY-AJAX-LIBRARY-(LATEST)-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!--JavaScript-Bundle-with-Popper-(LATEST)-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
+
+    <script>
+        // Script to open and close sidebar
+        function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("myOverlay").style.display = "block";
+        }
+
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("myOverlay").style.display = "none";
+        }
+
+        // Modal Image Gallery
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
+    </script>
+</body>
+
+</html>
