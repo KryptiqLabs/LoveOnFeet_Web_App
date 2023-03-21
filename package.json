@@ -4,7 +4,7 @@
   "description": "This is a web application template, built for the community, by a JS enthusiast.",
   "main": "application_main.js",
   "scripts": {
-    "start": "nodemon application_main.js"
+    "start": "node application_main.js"
   },
   "keywords": [],
   "author": "Muhammed Shaaqir Abrahams",
