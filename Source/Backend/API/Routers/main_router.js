@@ -28,7 +28,7 @@ const DONATE_ROUTE = process.env.DONATE_ROUTE;
 //DEFINE ALL ROUTES//
 /**
  * @description //DEFINE THE ROOT ROUTE e.g. LANDING PAGE //
- * @method GET /
+ * @method GET /home
  */
 main_router.get(ROOT_ROUTE, render_service.rootRoute);
 
