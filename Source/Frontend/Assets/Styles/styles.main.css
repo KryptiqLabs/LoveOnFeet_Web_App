@@ -82,3 +82,8 @@ a {
   height: 220px;
   text-align: left;
 }
+
+.slider-box {
+  background: linear-gradient(red, tomato, red);
+  height: 100vh;
+}

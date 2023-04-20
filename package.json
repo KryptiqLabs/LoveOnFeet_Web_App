@@ -1,21 +1,28 @@
 {
-  "name": "j.s.w.a.t-template",
+  "name": "loveonfeet-web-app",
   "version": "1.0.0",
-  "description": "This is a web application template, built for the community, by a JS enthusiast.",
+  "description": "This is a web application build for the Love On Feet Foundation.",
   "main": "application_main.js",
   "scripts": {
-    "start": "node application_main.js"
+    "start": "node application_main.js",
+    "dev": "nodemon application_main.js"
   },
   "keywords": [],
-  "author": "Muhammed Shaaqir Abrahams",
+  "author": "Kryptiq Labs - Design & Development",
   "license": "MIT",
+  "private": false,
   "dependencies": {
     "body-parser": "^1.20.0",
     "cors": "^2.8.5",
     "dotenv": "^16.0.1",
     "ejs": "^3.1.8",
     "express": "^4.18.1",
-    "morgan": "^1.10.0",
-    "nodemon": "^2.0.19"
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  },
+  "engines": {
+    "node": ">=14"
   }
 }
