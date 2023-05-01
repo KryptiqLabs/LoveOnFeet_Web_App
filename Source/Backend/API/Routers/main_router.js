@@ -14,9 +14,6 @@ dotenv.config({
 const render_service = require('../Renders/main_render');
 const main_router = express.Router();
 const ROOT_ROUTE = process.env.ROOT_ROUTE;
-const SIGN_IN_ROUTE = process.env.SIGN_IN_ROUTE;
-const SIGN_UP_ROUTE = process.env.SIGN_UP_ROUTE;
-const DOCS_ROUTE = process.env.DOCS_ROUTE;
 const PRIVACY_POLICY_ROUTE = process.env.PRIVACY_POLICY_ROUTE;
 const TERMS_CONDITIONS_ROUTE = process.env.TERMS_CONDITIONS_ROUTE;
 const CONTACT_ROUTE = process.env.CONTACT_ROUTE;
@@ -31,24 +28,6 @@ const DONATE_ROUTE = process.env.DONATE_ROUTE;
  * @method GET /home
  */
 main_router.get(ROOT_ROUTE, render_service.rootRoute);
-
-/**
- * @description //DEFINE THE SIGN-IN ROUTE e.g. SIGN-IN PAGE //
- * @method GET /sign-in
- */
-main_router.get(SIGN_IN_ROUTE, render_service.signInRoute);
-
-/**
- * @description //DEFINE THE SIGN-UP ROUTE e.g. SIGN-UP PAGE //
- * @method GET /sign-up
- */
-main_router.get(SIGN_UP_ROUTE, render_service.signUpRoute);
-
-/**
- * @description //DEFINE THE DOCUMENTATION ROUTE e.g. DOCUMENTATION PAGE //
- * @method GET /docs
- */
-main_router.get(DOCS_ROUTE, render_service.docsRoute);
 
 /**
  * @description //DEFINE THE PRIVACY-POLICY ROUTE e.g. PRIVACY POLICY PAGE //

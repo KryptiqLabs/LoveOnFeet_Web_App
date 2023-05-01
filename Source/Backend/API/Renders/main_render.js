@@ -11,21 +11,6 @@ exports.rootRoute = (req, res) => {
         res.render('main_view');
 }
 
-/////   SIGN-IN_ROUTE   -->   TO   -->   SIGN-IN_VIEW   //////
-exports.signInRoute = (req, res) => {
-        res.render('signIn_view');
-}
-
-/////   SIGN-UP_ROUTE   -->   TO   -->   SIGN-UP_VIEW   //////
-exports.signUpRoute = (req, res) => {
-        res.render('signUp_view');
-}
-
-/////   DOCS_ROUTE   -->   TO   -->   DOCUMENTATION_VIEW   //////
-exports.docsRoute = (req, res) => {
-        res.render('docs_view');
-}
-
 /////   PRIVACY_POLICY_ROUTE   -->   TO   -->   PRIVACY_POLICY_VIEW   //////
 exports.privacyPolicyRoute = (req, res) => {
         res.render('privacy-policy_view');
